@@ -2,7 +2,7 @@
 import rospy
 import json
 from pose_estimation import PoseEstimation
-from saam_pose_estimation.srv import PoseEstimator, PoseEstimatorResponse
+from liana_pose_estimation.srv import PoseEstimator, PoseEstimatorResponse
 from cv_bridge import CvBridge, CvBridgeError
 from std_msgs.msg import String
 
@@ -31,13 +31,13 @@ class ROSPoseEstimation:
 
 
 def main():
-    rospy.init_node('saam_pose_estimation')
+    rospy.init_node('liana_pose_estimation')
 
     rospy.loginfo("Initializing estimator ...")
     estimator = ROSPoseEstimation()
 
     rospy.loginfo("Initializing service ...")
-    rospy.Service('saam_pose_estimation', PoseEstimator,
+    rospy.Service('liana_pose_estimation', PoseEstimator,
                   estimator.service_controller)
 
     rospy.loginfo("Ready to estimate bodies.")

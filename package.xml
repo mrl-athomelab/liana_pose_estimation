@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-    <name>saam_pose_estimation</name>
+    <name>liana_pose_estimation</name>
     <version>0.0.1</version>
     <description>Yet another pose_estimator in ROS !</description>
 

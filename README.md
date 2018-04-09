@@ -1,4 +1,4 @@
-# saam_pose_estimation
-Saam pose estimation
+# liana_pose_estimation
+Liana pose estimation
 
 Pose estimation implemented on ros based on `tf-pose-estimation`.
